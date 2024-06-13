@@ -40,7 +40,7 @@ To install and run the project locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/bue221/astro-portfolio.git
+   git clone https://github.com/Addey34/MyPortfolioAG.git
    ```
 
 2. Navigate to the project directory:
