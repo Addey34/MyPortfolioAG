@@ -46,7 +46,7 @@ To install and run the project locally, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd astro-portfolio
+   cd MyPortfolioAG
    ```
 
 3. Install the dependencies:
