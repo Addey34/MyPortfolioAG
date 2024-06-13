@@ -1,13 +1,11 @@
 ---
-import { WORK } from '../lib/constants'
-import BaseLayout from '../layouts/BaseLayout.astro'
-import TopLayout from '../layouts/TopLayout.astro'
-import BottomLayout from '../layouts/BottomLayout.astro'
 import ProjectCard from '../components/ProjectCard.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import BottomLayout from '../layouts/BottomLayout.astro'
+import TopLayout from '../layouts/TopLayout.astro'
 
-import { contentfulClient } from '../lib/contentful'
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import type { EntryFieldTypes } from 'contentful'
+import { contentfulClient } from '../lib/contentful'
 
 interface Project {
   contentTypeId: 'Projects'
@@ -29,13 +27,13 @@ const entries = await contentfulClient.getEntries<Project>({})
   <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
     <TopLayout>
       <h2
-        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+        class="scroll-m-20 border-b pb-2 text-center text-3xl font-semibold tracking-tight first:mt-0"
       >
-        Projects and clone's
+        Projects
       </h2>
     </TopLayout>
     <BottomLayout>
-      <div class="flex w-full flex-wrap justify-center gap-2">
+      <div class="flex w-full flex-wrap justify-center gap-4">
         {
           entries.items.map((entry: any) => (
             <ProjectCard

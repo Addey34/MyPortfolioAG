@@ -8,10 +8,8 @@ import ContactsCard from '../components/sections/ContactsCard.astro'
 import Now from '../components/sections/Now.astro'
 import CVCard from '../components/sections/CVCard.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
-import TattooCard from '../components/sections/TattooCard.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
 //
-import { motion, AnimatePresence } from 'framer-motion'
 ---
 
 <script>
@@ -38,8 +36,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 </script>
 
 <BaseLayout
-  title="Andrés Plaza - Full Stack Developer"
-  description="Andrés Plaza - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Tattoo, Study"
+  title="Adrian Guichard - Full Stack Developer"
+  description="Adrian Guichard - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Study"
 >
   <div
     slot="loader"
@@ -47,39 +45,29 @@ import { motion, AnimatePresence } from 'framer-motion'
   >
   </div>
   <main
-    class="relative m-auto grid w-full max-w-6xl gap-2 overflow-hidden p-2 sm:gap-2 sm:p-4 md:grid-cols-2 md:gap-3 md:p-6 lg:grid-cols-4 lg:grid-rows-8 lg:gap-4"
+    class="relative m-auto grid w-full max-w-6xl gap-2 overflow-hidden p-2 sm:gap-2 sm:p-4 md:grid-cols-3 md:gap-3 md:p-6 lg:grid-cols-4 lg:grid-rows-5 lg:gap-4"
   >
     <IntroCard />
     <AboutMe />
     <CVCard />
     <Now />
+    <StudyCard />
+    <ContactsCard />
     <Card
       colSpan="md:col-span-1"
-      rowSpan="md:row-span-2"
-      title="Portfolio & Projects"
+      rowSpan="md:row-span-1"
+      title="Projects"
       href="/portfolio"
     />
-    <TimeZoneCard />
-    <ContactsCard />
     <ExperienceCard />
-    <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+    <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="✒️">
       <div class="flex h-full flex-col justify-between">
-        <blockquote class="mt-6 border-l-2 pl-6 italic">
-          “Anything one man can imagine, other men can make real.”
+        <blockquote class="mt-4 border-l-2 pl-6 italic">
+          “The best advertisement is a satisfied customer”
         </blockquote>
-        <p class="mt-2 text-xs">- Jules Verne</p>
+        <p class="mb-9 text-xs">- Bill Gates</p>
       </div>
     </Card>
-    <TattooCard />
-    <StudyCard />
-    <!-- <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
-      <p class="text-xs">
-        © 2023 · Crafted with ♥️ using <a
-          href="https://astro.build/"
-          target="_blank"
-          class="text-red-500">Astro</a
-        > by Gianmarco.
-      </p>
-    </Card> -->
+    <TimeZoneCard />
   </main>
 </BaseLayout>

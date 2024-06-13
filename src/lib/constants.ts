@@ -1,4 +1,4 @@
-import type { Site, Page } from './types'
+import type { Page, Site } from './types'
 
 export const loaderAnimation = [
   '.loader',
@@ -7,9 +7,9 @@ export const loaderAnimation = [
 ]
 
 export const LINKS = {
-  github: 'https://github.com/bue221',
-  linkedin: 'https://www.linkedin.com/in/bue221/',
-  mail: 'mailto:camiloplaza3@gmail.com',
+  github: 'https://github.com/Addey34',
+  linkedin: 'https://www.linkedin.com/in/adrian-guichard-95a299127/',
+  mail: 'mailto:me@adrianguichard.com',
   instagram: 'https://www.instagram.com/ancap.tattoo/',
   medium: 'https://ladvace.medium.com/',
   discord: 'https://discordapp.com/users/163300027618295808',
@@ -50,34 +50,34 @@ export const SEARCH: Page = {
 // Study Page
 export const STUDIES = [
   {
-    title: 'Computer Science',
-    institution: 'Universidad Central',
-    link: 'https://www.ucentral.edu.co/',
-    date: '2019 - 2027',
+    title: 'My Mentor',
+    institution: 'My Mentor',
+    link: 'https://mathieuvacance.com/',
+    date: '2023 - ...',
   },
   {
-    title: '...',
-    institution: 'Platzi',
-    link: 'https://platzi.com/',
-    date: '2018 - 2022',
+    title: 'OpenClassrooms',
+    institution: 'OpenClassrooms',
+    link: 'https://openclassrooms.com/',
+    date: '2023 - ...',
   },
   {
-    title: '...',
-    institution: 'Udemy',
-    link: 'https://www.udemy.com/',
-    date: '2018 - 2022',
+    title: 'W3Schools',
+    institution: 'W3Schools',
+    link: 'https://www.w3schools.com/',
+    date: '2023 - ...',
   },
   {
-    title: '...',
+    title: 'Youtube',
     institution: 'Youtube',
-    link: 'https://www.youtube.com/@midulive',
-    date: '2018 - 2022',
+    link: 'https://www.youtube.com/@melvynxdev',
+    date: '2023 - ...',
   },
   {
-    title: 'Tattoo Artist',
-    institution: 'Tattoo Academy',
-    link: 'https://www.instagram.com/tattoodcacademy/',
-    date: '2024 - 2025',
+    title: 'Stack Overflow',
+    institution: 'Stack Overflow',
+    link: 'https://stackoverflow.com/',
+    date: '2023 - ...',
   },
 ]
 
