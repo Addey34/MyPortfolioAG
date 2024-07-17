@@ -18,12 +18,30 @@ interface Project {
 }
 
 const entries = await contentfulClient.getEntries<Project>({})
+
+// Projet local
+const localProjects = [
+  {
+    sys: { id: 'local-casecobra' },
+    fields: {
+      name: 'Casecobra',
+      description:
+        'SaaS to personalize and purchase iphone protection - Using Uploadthing, Kinde Auth, Prisma/PostegreSQL and Stripe',
+      img: {
+        fields: {
+          file: { url: '/casecobra/casecobra.png' },
+          title: 'Casecobra Image',
+        },
+      },
+      website: 'https://case-cobra-lt2c42u71-adrian34s-projects.vercel.app/',
+    },
+  },
+]
+
+const allProjects = [...localProjects, ...entries.items]
 ---
 
-<BaseLayout
-  title="Portfolio"
-  description="Projects and some clone's that I did"
->
+<BaseLayout title="Projects" description="Projects and some clone's that I did">
   <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
     <TopLayout>
       <h2
@@ -35,7 +53,7 @@ const entries = await contentfulClient.getEntries<Project>({})
     <BottomLayout>
       <div class="flex w-full flex-wrap justify-center gap-4">
         {
-          entries.items.map((entry: any) => (
+          allProjects.map((entry: any) => (
             <ProjectCard
               key={entry?.sys?.id}
               href={entry?.fields?.website}
