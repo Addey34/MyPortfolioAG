@@ -1,10 +1,8 @@
 ---
-import { WORK } from '../lib/constants'
 import BaseLayout from '../layouts/BaseLayout.astro'
-import TopLayout from '../layouts/TopLayout.astro'
 import BottomLayout from '../layouts/BottomLayout.astro'
-
-import { EXPERIENCE } from '../lib/constants'
+import TopLayout from '../layouts/TopLayout.astro'
+import { WORK } from '../lib/constants'
 ---
 
 <BaseLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
@@ -17,7 +15,7 @@ import { EXPERIENCE } from '../lib/constants'
       </h2>
     </TopLayout>
     <BottomLayout>
-      <ul>
+      <!-- <ul>
         {
           EXPERIENCE.map((entry) => (
             <li class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25">
@@ -39,7 +37,7 @@ import { EXPERIENCE } from '../lib/constants'
             </li>
           ))
         }
-      </ul>
+      </ul> -->
     </BottomLayout>
   </main>
 </BaseLayout>

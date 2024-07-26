@@ -19,14 +19,13 @@ interface Project {
 
 const entries = await contentfulClient.getEntries<Project>({})
 
-// Projet local
 const localProjects = [
   {
     sys: { id: 'local-casecobra' },
     fields: {
       name: 'CaseCobra',
       description:
-        'SaaS to personalize and purchase Iphone protection - Using React/Nextjs, Uploadthing, Kinde Auth, Prisma/PostegreSQL and Stripe',
+        'SaaS to personalize and purchase Iphone protection - Using React/Next.js, Uploadthing, Kinde Auth, Prisma/PostegreSQL and Stripe',
       img: {
         fields: {
           file: { url: '/casecobra/casecobra.png' },
@@ -34,6 +33,21 @@ const localProjects = [
         },
       },
       website: 'https://case-cobra-ag.vercel.app/',
+    },
+  },
+  {
+    sys: { id: 'local-todolist' },
+    fields: {
+      name: 'To-Do-List',
+      description:
+        'To-do list where you can add, edit, delete and validate completed tasks - Using Node.js and mongodb',
+      img: {
+        fields: {
+          file: { url: '/todolist/todolist.png' },
+          title: 'To Do List Image',
+        },
+      },
+      website: 'https://to-do-list-ag.vercel.app/',
     },
   },
 ]
