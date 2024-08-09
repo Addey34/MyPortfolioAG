@@ -56,4 +56,12 @@
   body {
     @apply bg-background text-foreground;
   }
+  ::selection {
+    background: #f97316;
+    color: black;
+  }
+  .dark ::selection {
+    background: #f97316;
+    color: white;
+  }
 }
