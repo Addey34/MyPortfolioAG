@@ -9,16 +9,66 @@ import Card from '../Card.astro'
       <br />
       <br />
       My primary tools of choice includes:
-      <ul class="list-inside list-disc">
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Next.js</li>
-        <li>Python</li>
-        <li>MongoDB</li>
+      <ul class="flex list-none flex-col gap-2 pt-2">
+        <li class="flex items-center gap-2">
+          <img src="/logos/react.png" alt="React logo" class="h-6 w-6" />React
+        </li>
+        <li class="flex items-center gap-2">
+          <img
+            src="/logos/nodejs.png"
+            alt="Node.js logo"
+            class="h-6 w-6"
+          />Node.js
+        </li>
+        <li class="flex items-center gap-2">
+          <img
+            src="/logos/nextjs.png"
+            alt="Next.js logo"
+            class="h-6 w-6 dark:hidden"
+          />
+          <img
+            src="/logos/nextjs-w.png"
+            alt="Next.js logo"
+            class="hidden h-6 w-6 dark:block"
+          />Next.js
+        </li>
+        <!-- <li class="flex items-center gap-2">
+          <img
+            src="/logos/astro.png"
+            alt="Astro logo"
+            class="h-6 w-6 dark:hidden"
+          />
+          <img
+            src="/logos/astro-w.png"
+            alt="Astro logo"
+            class="hidden h-6 w-6 dark:block"
+          />Astro
+        </li> -->
+        <li class="flex items-center gap-2">
+          <img
+            src="/logos/python.png"
+            alt="Python logo"
+            class="h-6 w-6"
+          />Python
+        </li>
+        <li class="flex items-center gap-2">
+          <img
+            src="/logos/mongodb.png"
+            alt="MongoDB logo"
+            class="h-6 w-6"
+          />MongoDB
+        </li>
+        <li class="flex items-center gap-2">
+          <img
+            src="/logos/postgresql.png"
+            alt="PostgreSQL logo"
+            class="h-6 w-6"
+          />PostgreSQL
+        </li>
       </ul>
     </p>
-    <p class="mt-4 text-sm font-light">
-      Beyond coding, I am passionate about art, esports and financial markets.
-    </p>
   </div>
+  <p class="mt-4 text-sm font-light">
+    Beyond coding, I am passionate about art, esports and financial markets.
+  </p>
 </Card>
