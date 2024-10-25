@@ -9,7 +9,7 @@ export const loaderAnimation = [
 export const LINKS = {
   github: 'https://github.com/Addey34',
   linkedin: 'https://www.linkedin.com/in/adrian-guichard-95a299127/',
-  mail: 'mailto:me@adrianguichard.com',
+  mail: 'mailto:adrian34470@gmail.com',
   instagram: 'https://www.instagram.com/ancap.tattoo/',
   medium: 'https://ladvace.medium.com/',
   discord: 'https://discordapp.com/users/163300027618295808',

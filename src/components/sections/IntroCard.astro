@@ -7,25 +7,29 @@ import { Button } from '../ui/button'
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-2">
   <div class="flex h-full w-full">
-    <div class="flex flex-col justify-between gap-4 md:max-h-[300px]">
-      <div class="flex h-full flex-col">
+    <div
+      class="flex h-full w-full flex-col justify-between gap-4 md:max-h-[300px]"
+    >
+      <div class="flex flex-grow flex-col">
         <h6 class="m-0 text-2xl font-light text-gray-500">Welcome👋</h6>
         <p class="m-0 text-xl font-light">
-          Hi, I'm <b class="font-bold">Adrian Guichard</b>, a lifelong IT
-          enthusiast, I have explored various fields ranging from hardware to
-          networks. This curiosity naturally led me to full stack web
-          development, a captivating and constantly evolving universe that I
-          have chosen to delve into as an apprentice developer.
+          Hi, I'm <b class="font-bold">Adrian Guichard</b>, I am a self-taught
+          developer seeking a work-study program to formalize my skills through
+          a Bachelor in Web and Mobile Development at ISCOD. With experience in
+          HTML, CSS, JavaScript, Python and frameworks like React and Node.js,
+          I’ve developed strong autonomy and adaptability. Motivated and
+          curious, I’m eager to grow in a professional environment and
+          contribute to your projects.
         </p>
       </div>
-      <div class="flex gap-4">
+      <div class="mt-auto flex gap-4">
         <a href={LINKS.github} aria-label="github profile" target="_blank">
           <Button aria-label="github profile">
             <Github />
             <span class="sr-only">GitHub Profile</span>
           </Button>
         </a>
-        <a href={LINKS.linkedin} aria-label="linkeding profile" target="_blank">
+        <a href={LINKS.linkedin} aria-label="linkedin profile" target="_blank">
           <Button aria-label="linkedin profile">
             <Linkedin />
             <span class="sr-only">Linkedin Profile</span>
@@ -43,7 +47,7 @@ import { Button } from '../ui/button'
       width="300"
       height="300"
       src="/me.png"
-      class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+      class="pointer-events-none absolute bottom-[-10px] right-[-100px] z-[-1] max-h-[350px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
       alt="memoji of Adrian Guichard"
     />
   </div>
