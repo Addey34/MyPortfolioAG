@@ -21,6 +21,62 @@ const entries = await contentfulClient.getEntries<Project>({})
 
 const localProjects = [
   {
+    sys: { id: 'local-solarsystem' },
+    fields: {
+      name: 'SolarSystem3D',
+      description: 'SolarSystem3D - Using three.js',
+      img: {
+        fields: {
+          file: { url: '/solarsystem/solarsystem.png' },
+          title: 'SolarSystem3D Image',
+        },
+      },
+      website: 'https://solarsystem3d.onrender.com/',
+    },
+  },
+  {
+    sys: { id: 'local-managerstaff' },
+    fields: {
+      name: 'ManagerStaff',
+      description: 'ManagerStaff - Using Spring and PostgreSQL',
+      img: {
+        fields: {
+          file: { url: '/managerstaff/managerstaff.png' },
+          title: 'ManagerStaff Image',
+        },
+      },
+      website: 'https://managerstaff.onrender.com/',
+    },
+  },
+  {
+    sys: { id: 'local-nutritionscore' },
+    fields: {
+      name: 'NutritionScore',
+      description: 'Calculator of nutrition score - Using React',
+      img: {
+        fields: {
+          file: { url: '/nutritionscore/nutritionscore.png' },
+          title: 'NutritionScore Image',
+        },
+      },
+      website: 'https://nutritionscore.onrender.com/',
+    },
+  },
+  {
+    sys: { id: 'local-calculatorvuejs' },
+    fields: {
+      name: 'CalculatorVueJS',
+      description: 'Calculator - Using Vue.js',
+      img: {
+        fields: {
+          file: { url: '/calculatorvuejs/calculatorvuejs.png' },
+          title: 'CalculatorVueJS Image',
+        },
+      },
+      website: 'https://calculatorvuejs.onrender.com/',
+    },
+  },
+  {
     sys: { id: 'local-casecobra' },
     fields: {
       name: 'CaseCobra',
@@ -52,7 +108,7 @@ const localProjects = [
   },
 ]
 
-const allProjects = [...localProjects, ...entries.items]
+const allProjects = [...localProjects]
 ---
 
 <BaseLayout title="Projects" description="Projects and some clone's that I did">
