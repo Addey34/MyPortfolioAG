@@ -4,14 +4,14 @@ import Card from '../Card.astro'
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="About me 🕵️‍♂️">
   <div class="flex flex-col gap-2">
-    <p class="text-sm font-light">
-      I am a self-taught apprentice full stack developer.
-      <br />
-      <br />
+    <p class="pt-2 text-sm font-light">
       My primary tools of choice includes:
-      <ul class="flex list-none flex-col gap-2 pt-2">
+      <ul class="flex list-none flex-col gap-2 pt-1">
         <li class="flex items-center gap-2">
           <img src="/logos/react.png" alt="React logo" class="h-6 w-6" />React
+        </li>
+        <li class="flex items-center gap-2">
+          <img src="/logos/vue.png" alt="Vue.js logo" class="h-6 w-6" />Vue.js
         </li>
         <li class="flex items-center gap-2">
           <img
@@ -31,6 +31,18 @@ import Card from '../Card.astro'
             alt="Next.js logo"
             class="hidden h-6 w-6 dark:block"
           />Next.js
+        </li>
+        <li class="flex items-center gap-2">
+          <img
+            src="/logos/three.png"
+            alt="Three.js logo"
+            class="h-6 w-6 dark:hidden"
+          />
+          <img
+            src="/logos/three-w.png"
+            alt="Three.js logo"
+            class="hidden h-6 w-6 dark:block"
+          />Three.js
         </li>
         <!-- <li class="flex items-center gap-2">
           <img
