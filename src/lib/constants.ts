@@ -47,8 +47,8 @@ export const SEARCH: Page = {
 // Study Page
 export const STUDIES = [
   {
-    title: 'My Mentor',
-    institution: 'My Mentor',
+    title: 'My Initiator',
+    institution: 'My Initiator',
     link: 'https://mathieuvacance.com/',
     date: '2023 - ...',
   },

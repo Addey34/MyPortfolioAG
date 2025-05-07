@@ -21,10 +21,24 @@ const entries = await contentfulClient.getEntries<Project>({})
 
 const localProjects = [
   {
+    sys: { id: 'local-todolist' },
+    fields: {
+      name: 'To-Do-List',
+      description: '- Using Vite.js, React, Express and mongodb',
+      img: {
+        fields: {
+          file: { url: '/todolist/todolist.png' },
+          title: 'To Do List Image',
+        },
+      },
+      website: 'https://to-do-list-xho9.onrender.com/',
+    },
+  },
+  {
     sys: { id: 'local-solarsystem' },
     fields: {
       name: 'SolarSystem3D',
-      description: 'SolarSystem3D - Using three.js',
+      description: '- Using three.js & Vite.js',
       img: {
         fields: {
           file: { url: '/solarsystem/solarsystem.png' },
@@ -35,38 +49,24 @@ const localProjects = [
     },
   },
   {
-    sys: { id: 'local-managerstaff' },
+    sys: { id: 'local-ultimatetransfert' },
     fields: {
-      name: 'ManagerStaff',
-      description: 'ManagerStaff - Using Spring and PostgreSQL',
-      img: {
-        fields: {
-          file: { url: '/managerstaff/managerstaff.png' },
-          title: 'ManagerStaff Image',
-        },
-      },
-      website: 'https://managerstaff.onrender.com/',
-    },
-  },
-  {
-    sys: { id: 'local-nutritionscore' },
-    fields: {
-      name: 'NutritionScore',
-      description: 'Calculator of nutrition score - Using React',
-      img: {
-        fields: {
-          file: { url: '/nutritionscore/nutritionscore.png' },
-          title: 'NutritionScore Image',
-        },
-      },
-      website: 'https://nutritionscore.onrender.com/',
+      name: 'UltimeTransfert',
+      description: '- Using Vite.js, React and Express',
+      // img: {
+      //   fields: {
+      //     file: { url: '/ultimatetransfert/ultimatetransfert.png' },
+      //     title: 'UltimeTransfert Image',
+      //   },
+      // },
+      website: 'https://github.com/Addey34/UltimeTransfert',
     },
   },
   {
     sys: { id: 'local-calculatorvuejs' },
     fields: {
       name: 'CalculatorVueJS',
-      description: 'Calculator - Using Vue.js',
+      description: '- Using Vue.js',
       img: {
         fields: {
           file: { url: '/calculatorvuejs/calculatorvuejs.png' },
@@ -77,33 +77,31 @@ const localProjects = [
     },
   },
   {
-    sys: { id: 'local-casecobra' },
+    sys: { id: 'local-gameszone' },
     fields: {
-      name: 'CaseCobra',
-      description:
-        'SaaS to personalize and purchase Iphone protection - Using React/Next.js, Uploadthing, Kinde Auth, Prisma/PostegreSQL and Stripe',
+      name: 'GamesZone',
+      description: '- Using JS',
       img: {
         fields: {
-          file: { url: '/casecobra/casecobra.png' },
-          title: 'Casecobra Image',
+          file: { url: '/gameszone/gameszone.png' },
+          title: 'GamesZone Image',
         },
       },
-      website: 'https://case-cobra-ag.vercel.app/',
+      website: 'https://games-zone.onrender.com/',
     },
   },
   {
-    sys: { id: 'local-todolist' },
+    sys: { id: 'local-nutritionscore' },
     fields: {
-      name: 'To-Do-List',
-      description:
-        'To-do list where you can add, edit, delete and validate completed tasks - Using Node.js and mongodb',
+      name: 'NutritionScore',
+      description: '- Using React',
       img: {
         fields: {
-          file: { url: '/todolist/todolist.png' },
-          title: 'To Do List Image',
+          file: { url: '/nutritionscore/nutritionscore.png' },
+          title: 'NutritionScore Image',
         },
       },
-      website: 'https://to-do-list-ag.vercel.app/',
+      website: 'https://nutritionscore.onrender.com/',
     },
   },
 ]
