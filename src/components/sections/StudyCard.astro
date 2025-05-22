@@ -4,8 +4,19 @@ import Card from '../Card.astro'
 import { Badge } from '../ui/badge'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Study 👨‍🏫">
-  <div class="mt-2 flex w-full flex-wrap items-center justify-center gap-2">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+  <div class="bold-1 text-xl">
+    <h2>
+      <strong
+        >Study<img
+          src="/icons/laptop.png "
+          alt="laptop emoji"
+          class="mb-2 ml-2 inline-block h-10 w-10"
+        /></strong
+      >
+    </h2>
+  </div>
+  <div class="flex w-full flex-wrap items-center justify-center gap-2">
     {
       STUDIES.map((study) => (
         <a href={study.link} target="__blank">

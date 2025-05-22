@@ -60,9 +60,18 @@ import StudyCard from '../components/sections/StudyCard.astro'
       href="/projects"
     />
     <ExperienceCard />
-    <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="✒️">
+    <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+      <div class="bold-1 mb-2 text-xl">
+        <h2>
+          <img
+            src="/icons/citation.png "
+            alt="Citation emoji"
+            class="inline-block h-10 w-10"
+          />
+        </h2>
+      </div>
       <div class="flex h-full flex-col justify-between">
-        <blockquote class="mt-4 border-l-2 pl-6 italic">
+        <blockquote class="mt-6 border-l-2 pl-6 italic">
           “The best advertisement is a satisfied customer”
         </blockquote>
         <p class="mb-9 text-xs">- Bill Gates</p>

@@ -1,7 +1,7 @@
 ---
+import { SquareArrowOutUpRight } from 'lucide-react'
 import ContentCard from './ContentCard.astro'
 import { Card as ShadcnCard } from './ui/card'
-import { SquareArrowOutUpRight } from 'lucide-react'
 
 interface Props {
   title?: string
@@ -16,7 +16,7 @@ const { title, body, colSpan, rowSpan, href, colorText } = Astro.props
 ---
 
 <ShadcnCard
-  className={`card-animate transfor-y-[-40%] align-start perspective-1200 group group relative col-span-1 h-auto w-full flex-none transform justify-start overflow-hidden p-6 shadow-lg transition duration-75 ease-in-out ${
+  className={`card-animate transfor-y-[-40%] align-start perspective-1200 group group relative col-span-1 h-auto w-full flex-none transform justify-start overflow-hidden px-6 pb-6 pt-4 shadow-lg transition duration-75 ease-in-out ${
     colSpan || 'md:col-span-2'
   } ${rowSpan || ''} ${href ? 'cursor-pointer hover:border-primary' : ''}`}
 >

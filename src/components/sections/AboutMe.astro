@@ -2,9 +2,20 @@
 import Card from '../Card.astro'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="About me 🕵️‍♂️">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
+  <div class="bold-1 text-xl">
+    <h2>
+      <strong
+        >About me<img
+          src="/icons/aboutme.png "
+          alt="About Me emoji"
+          class="mb-2 ml-2 inline-block h-10 w-10"
+        /></strong
+      >
+    </h2>
+  </div>
   <div class="flex flex-col gap-2">
-    <p class="pt-2 text-sm font-light">
+    <p class="text-sm font-light">
       My primary tools of choice includes:
       <ul class="flex list-none flex-col gap-2 pt-1">
         <li class="flex items-center gap-2">

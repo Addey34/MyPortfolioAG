@@ -3,6 +3,17 @@ import Card from '../Card.astro'
 import TimeZoneV2 from './TimeZoneCardV2'
 ---
 
-<Card colSpan="lg:col-span-3" rowSpan="md:row-span-1" title="Time zone 🕐">
+<Card colSpan="lg:col-span-3" rowSpan="md:row-span-1">
+  <div class="bold-1 text-xl">
+    <h2>
+      <strong
+        >Time zone<img
+          src="/icons/clock.png "
+          alt="Clock emoji"
+          class="mb-2 ml-1 inline-block h-10 w-10"
+        /></strong
+      >
+    </h2>
+  </div>
   <TimeZoneV2 timezone="Europe/Paris" client:load />
 </Card>
