@@ -6,25 +6,42 @@ import Card from '../Card.astro'
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
   <div class="h-full">
     <header class="flex items-center">
-      <h2 class="mt-1 text-xl font-bold text-foreground">
-        Let's start working together! 
+      <h2 class="text-xl font-bold text-foreground">
+        Contacts<img
+          src="/icons/contact.png "
+          alt="Contact emoji"
+          class="mb-2 ml-2 inline-block h-10 w-10"
+        />
       </h2>
     </header>
-    <address class="mt-4 flex flex-col">
-      <h2 class="text-gray-500">Contact Details</h2>
+    <hr />
+    <address class="mt-2 flex flex-col">
+      <h2 class="text-gray-500">Coordonnées</h2>
       <p>adrian34470@gmail.com</p>
       <p>Montpellier, France</p>
     </address>
-    <div class="mt-4 flex w-fit flex-col">
-      <h2 class="text-gray-500">Socials</h2>
-      <ul>
-        <li>
-          <a href={LINKS.linkedin} target="_blank">Linkedin</a>
-        </li>
-        <li>
-          <a href={LINKS.github} target="_blank">Github</a>
-        </li>
-      </ul>
+    <div class="mt-4 flex flex-col">
+      <h2 class="mb-1 text-gray-500">Réseaux sociaux</h2>
+
+      <div class="flex items-center gap-6 md:justify-center">
+        <a href={LINKS.linkedin} target="_blank" aria-label="LinkedIn">
+          <img
+            src="/icons/linkedin-black.png"
+            alt="LinkedIn"
+            class="h-16 w-16 transition hover:opacity-80"
+          />
+        </a>
+
+        <span class="text-gray-300">|</span>
+
+        <a href={LINKS.github} target="_blank" aria-label="GitHub">
+          <img
+            src="/icons/github-black.png"
+            alt="GitHub"
+            class="h-16 w-16 transition hover:opacity-80"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </Card>

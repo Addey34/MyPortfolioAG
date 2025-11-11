@@ -50,7 +50,7 @@ export const STUDIES = [
     title: 'My Initiator',
     institution: 'My Initiator',
     link: 'https://mathieuvacance.com/',
-    date: '2023 - ...',
+    date: '2023 - 2023',
   },
   {
     title: 'OpenClassrooms',
@@ -67,7 +67,7 @@ export const STUDIES = [
   {
     title: 'Youtube',
     institution: 'Youtube',
-    link: 'https://www.youtube.com/@melvynxdev',
+    link: 'https://www.youtube.com/',
     date: '2023 - ...',
   },
   {

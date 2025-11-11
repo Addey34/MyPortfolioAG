@@ -1,0 +1,28 @@
+---
+import Card from '../Card.astro'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-1" href="/projects">
+  <div class="flex h-full flex-col">
+    <div class="bold-1 text-xl">
+      <h2>
+        <strong class="text-foreground"
+          >Projets Perso.<img
+            src="/icons/project.png "
+            alt="About Me emoji"
+            class="mb-2 ml-2 inline-block h-10 w-10"
+          /></strong
+        >
+      </h2>
+    </div>
+
+    <hr class="" />
+
+    <div class="relative mt-3 flex-grow overflow-hidden">
+      <iframe
+        src="/projects"
+        class="pointer-events-none h-[160%] w-[160%] origin-top-left scale-[0.62]"
+      ></iframe>
+    </div>
+  </div>
+</Card>

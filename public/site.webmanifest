@@ -1,11 +1,11 @@
 {
-<<<<<<< HEAD
-  "name": "",
-  "short_name": "",
-=======
-  "name": "My Portfolio AG",
-  "short_name": "My Portfolio AG",
->>>>>>> f44a824 (Update)
+  "name": "Portfolio | Adrian Guichard",
+  "short_name": "AG Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#F7B731",
+  "background_color": "#ffffff",
+  "description": "Portfolio d'Adrian Guichard - Développeur Full-Stack TypeScript",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -17,8 +17,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }

@@ -1,4 +1,4 @@
-import contentful from 'contentful'
+import * as contentful from 'contentful'
 
 console.log('Space ID:', import.meta.env.CONTENTFUL_SPACE_ID)
 console.log('Preview Token:', import.meta.env.CONTENTFUL_PREVIEW_TOKEN)

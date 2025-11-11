@@ -6,52 +6,64 @@ import { Button } from '../ui/button'
 ---
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-2">
-  <div class="flex h-full w-full">
-    <div class="justify-betweenmd:max-h-[300px] flex h-full w-full flex-col">
-      <div class="flex flex-grow flex-col">
-        <h6 class="m-0 text-2xl font-light text-gray-500">
-          Welcome<img
-            src="/icons/greet.png "
-            alt="greeting emoji"
-            class="mb-2 ml-1 inline-block h-10 w-10"
-          />
-        </h6>
-        <p class="m-0 text-xl font-light">
-          Hi, I'm <b class="font-bold">Adrian Guichard</b>, a passionate
-          full-stack JS/TS developer with two years of experience. I'm driven by
-          curiosity and love exploring a wide range of technologies, from web
-          development to 3D experiences, databases, and AI. <br /> My goal is to
-          keep learning, building, and solving real-world problems through code,
-          whether it's in a browser, a 3D engine, or behind an intelligent system.
-        </p>
-      </div>
-      <div class="mt-4 flex gap-4">
-        <a href={LINKS.github} aria-label="github profile" target="_blank">
-          <Button aria-label="github profile">
-            <Github />
-            <span class="sr-only">GitHub Profile</span>
-          </Button>
-        </a>
-        <a href={LINKS.linkedin} aria-label="linkedin profile" target="_blank">
-          <Button aria-label="linkedin profile">
-            <Linkedin />
-            <span class="sr-only">Linkedin Profile</span>
-          </Button>
-        </a>
-        <a href={LINKS.mail} aria-label="mail profile" target="_blank">
-          <Button>
-            <Mail />
-            <span class="sr-only">Email contact</span>
-          </Button>
-        </a>
-      </div>
-    </div>
+  <div class="bold-1 text-2xl">
+    <h2>
+      <strong class="text-foreground"
+        >Bienvenue !
+        <img
+          src="/icons/greet.png"
+          alt="greeting emoji"
+          class="mb-2 ml-1 inline-block h-10 w-10"
+        /></strong
+      >
+    </h2>
+  </div>
+
+  <hr />
+
+  <div class="relative flex flex-col gap-4 py-4 md:flex-row">
+    <p class="mx-4 font-light md:w-2/3 md:text-xl">
+      Je m'appelle <b class="font-bold">Adrian Guichard</b>, développeur
+      Full-Stack TypeScript autodidacte depuis deux ans. J’ai réalisé plusieurs
+      projets de bout en bout, de la conception d’interfaces modernes (React,
+      Vue.js, Astro, TailwindCSS, Three.js) jusqu’au développement de back-ends
+      robustes avec Express.js et MongoDB (API, authentification, gestion de
+      données). Aujourd’hui, je recherche une alternance Bac+2/Bac+3 afin de
+      renforcer mes compétences, valider un diplôme et contribuer activement à
+      des projets ambitieux.
+    </p>
+
     <img
+      src="/photo.png"
       width="300"
       height="300"
-      src="/photo.png"
-      class="pointer-events-none absolute bottom-[-10px] right-[-100px] z-[-1] max-h-[350px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
-      alt="memoji of Adrian Guichard"
+      alt="Photo of Adrian Guichard"
+      class="pointer-events-none absolute right-0 top-0 z-0 h-full w-full -translate-x-36 select-none rounded-xl object-cover opacity-20 transition duration-300 hover:scale-105 md:relative md:right-auto md:top-auto md:h-auto md:w-52 md:translate-x-0 md:rounded-xl md:opacity-100"
     />
+  </div>
+
+  <hr />
+
+  <div
+    class="mt-4 flex justify-center gap-6 sm:mt-8 sm:gap-6 md:mt-4 md:gap-12 lg:mt-6 lg:gap-16"
+  >
+    <a href={LINKS.linkedin} aria-label="linkedin profile" target="_blank">
+      <Button size="xl" aria-label="linkedin profile" variant={'outline'}>
+        <Linkedin className="" />
+        <span class="sr-only">Linkedin Profile</span>
+      </Button>
+    </a>
+    <a href={LINKS.github} aria-label="github profile" target="_blank">
+      <Button size="xl" aria-label="github profile" variant={'outline'}>
+        <Github className="" />
+        <span class="sr-only">GitHub Profile</span>
+      </Button>
+    </a>
+    <a href={LINKS.mail} aria-label="mail profile" target="_blank">
+      <Button size="xl" aria-label="mail profile" variant={'outline'}>
+        <Mail className="" />
+        <span class="sr-only">Email contact</span>
+      </Button>
+    </a>
   </div>
 </Card>
