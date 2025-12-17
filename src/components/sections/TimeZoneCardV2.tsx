@@ -4,8 +4,11 @@ const Timezone = ({ timezone }: { timezone: string }) => {
   const [dateTime, setDateTime] = useState('')
 
   useEffect(() => {
-    const capitalize = (str: string) =>
-      str.replace(/\b\w/g, (char) => char.toUpperCase())
+    const capitalizeWords = (str: string) =>
+      str
+        .split(' ')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
     const updateTime = () => {
       const now = new Date()
       const formatter = new Intl.DateTimeFormat('fr-FR', {
@@ -19,7 +22,7 @@ const Timezone = ({ timezone }: { timezone: string }) => {
         second: '2-digit',
       })
 
-      setDateTime(capitalize(formatter.format(now)))
+      setDateTime(capitalizeWords(formatter.format(now)))
     }
 
     updateTime()

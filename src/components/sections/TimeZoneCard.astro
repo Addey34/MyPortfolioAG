@@ -8,7 +8,7 @@ import TimeZoneV2 from './TimeZoneCardV2'
     <h2>
       <strong class="text-foreground"
         >Fuseau horaire<img
-          src="/icons/clock.png "
+          src="/icons/clock.png"
           alt="Clock emoji"
           class="mb-2 ml-2 inline-block h-10 w-10"
         /></strong
@@ -16,5 +16,7 @@ import TimeZoneV2 from './TimeZoneCardV2'
     </h2>
   </div>
   <hr />
-  <TimeZoneV2 timezone="Europe/Paris" client:load />
+  <div class="flex-grow">
+    <TimeZoneV2 timezone="Europe/Paris" client:load />
+  </div>
 </Card>

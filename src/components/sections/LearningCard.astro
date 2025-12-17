@@ -4,12 +4,12 @@ import Card from '../Card.astro'
 import { Badge } from '../ui/badge'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
   <div class="bold-1 text-xl">
     <h2>
       <strong class="text-foreground"
         >Apprentissage<img
-          src="/icons/laptop.png "
+          src="/icons/laptop.png"
           alt="laptop emoji"
           class="mb-2 ml-2 inline-block h-10 w-10"
         /></strong
@@ -18,11 +18,11 @@ import { Badge } from '../ui/badge'
   </div>
   <hr />
   <div
-    class="mt-4 flex w-full flex-wrap items-center justify-center gap-8 md:gap-4"
+    class="mt-4 flex flex-grow flex-wrap items-start justify-center gap-8 md:gap-4"
   >
     {
       STUDIES.map((study) => (
-        <a href={study.link} target="__blank">
+        <a href={study.link} target="_blank">
           <Badge variant="outline" className="text-sm">
             {study.institution}
           </Badge>

@@ -3,12 +3,12 @@ import { LINKS } from '../../lib/constants'
 import Card from '../Card.astro'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
   <div class="h-full">
     <header class="flex items-center">
       <h2 class="text-xl font-bold text-foreground">
         Contacts<img
-          src="/icons/contact.png "
+          src="/icons/contact.png"
           alt="Contact emoji"
           class="mb-2 ml-2 inline-block h-10 w-10"
         />
@@ -26,7 +26,7 @@ import Card from '../Card.astro'
       <div class="flex items-center gap-6 md:justify-center">
         <a href={LINKS.linkedin} target="_blank" aria-label="LinkedIn">
           <img
-            src="/icons/linkedin-black.png"
+            src="/icons/linkedin.png"
             alt="LinkedIn"
             class="h-16 w-16 transition hover:opacity-80"
           />
@@ -36,7 +36,7 @@ import Card from '../Card.astro'
 
         <a href={LINKS.github} target="_blank" aria-label="GitHub">
           <img
-            src="/icons/github-black.png"
+            src="/icons/github.png"
             alt="GitHub"
             class="h-16 w-16 transition hover:opacity-80"
           />

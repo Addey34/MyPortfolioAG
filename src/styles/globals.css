@@ -4,24 +4,24 @@
 
 @layer base {
   :root {
-    --background: 220 12% 96%; /* #1E1E1E */
+    --background: 40 30% 96%; /* #F8F5F0  */
     --foreground: 42 92% 58%; /* #F7B731 */
-    --card: 0 0% 97.3%; /* #FCFBF9 */
-    --card-foreground: 20 14.3% 4.1%; /* #0A0807 */
-    --popover: 0 0% 97.3%; /* #FCFBF9 */
-    --popover-foreground: 20 14.3% 4.1%; /* #0A0807 */
+    --card: 40 30% 98%; /* #FDFCFA */
+    --card-foreground: 20 14% 10%; /* #1A1714 */
+    --popover: 40 30% 98%; /* #FDFCFA */
+    --popover-foreground: 20 14% 10%; /* #1A1714 */
     --primary: 42 92% 58%; /* #F7B731 */
-    --primary-foreground: 0 0% 97.3%; /* #FCFBF9 */
-    --secondary: 0 0% 97.3%; /* #FCFBF9 */
-    --secondary-foreground: 20 14.3% 4.1%; /* #0A0807 */
-    --muted: 0 0% 97.3%; /* #FCFBF9 */
-    --muted-foreground: 42 92% 58%; /* #F7B731 */
-    --accent: 0 0% 97.3%; /* #FCFBF9 */
+    --primary-foreground: 20 14% 10%; /* #1A1714 */
+    --secondary: 40 20% 92%; /* #EDE9E2 */
+    --secondary-foreground: 20 14% 10%; /* #1A1714 */
+    --muted: 40 15% 90%; /* #E8E4DD */
+    --muted-foreground: 20 10% 40%; /* #6B645D */
+    --accent: 40 30% 98%; /* #FDFCFA */
     --accent-foreground: 42 92% 58%; /* #F7B731 */
-    --destructive: 0 84.2% 60.2%; /* #F25555 */
-    --destructive-foreground: 0 0% 97.3%; /* #F8F8F8 */
+    --destructive: 42 92% 58%; /* #F7B731 */
+    --destructive-foreground: 0 0% 100%; /* Blanc */
     --border: 42 92% 58%; /* #F7B731 */
-    --input: 20 5.9% 90%; /* #E9E6E1 */
+    --input: 40 20% 92%; /* #EDE9E2 */
     --ring: 42 92% 58%; /* #F7B731 */
     --radius: 1rem;
   }
@@ -30,7 +30,7 @@
     --background: 0 0% 11.8%; /* #1E1E1E */
     --foreground: 42 92% 58%; /* #F7B731 */
     --card: 20 14.3% 4.1%; /* #0A0807 */
-    --card-foreground: 60 9.1% 97.8%; /* #FCFBF9 */
+    --card-foreground: 43, 84%, 80%; /* #F7E1A2 */
     --popover: 20 14.3% 4.1%; /* #0A0807 */
     --popover-foreground: 60 9.1% 97.8%; /* #FCFBF9 */
     --primary: 42 92% 58%; /* #F7B731 */
@@ -41,7 +41,7 @@
     --muted-foreground: 42 92% 58%; /* #F7B731 */
     --accent: 20 14.3% 4.1%; /* #0A0807 */
     --accent-foreground: 42 92% 58%; /* #F7B731 */
-    --destructive: 0 72.2% 50.6%; /* #E04848 */
+    --destructive: 43, 84%, 80%; /* #F7E1A2 */
     --destructive-foreground: 20 14.3% 4.1%; /* #0A0807 */
     --border: 42 92% 58%; /* #F7B731 */
     --input: 20 14.3% 4.1%; /* #0A0807 */
@@ -53,6 +53,9 @@
   * {
     @apply border-border;
   }
+  html {
+    overflow-y: scroll; /* Force la scrollbar pour éviter le décalage entre pages */
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -62,6 +65,13 @@
   }
   .dark ::selection {
     background: #f7b731;
-    color: #fcfbf9;
+    color: #F7E1A2;
+  }
+}
+
+/* Grid avec rangées égales pour aligner les bordures des cartes */
+@layer utilities {
+  .grid-rows-auto-fit {
+    grid-auto-rows: minmax(min-content, 1fr);
   }
 }
